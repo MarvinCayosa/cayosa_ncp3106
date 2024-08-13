@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is a bionote for Marvin Cayosa."
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marvin Cayosa</title>
+    <link rel="icon" href="First daY.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.3, // Trigger when 30% of the element is visible
+        };
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            } else {
+              entry.target.classList.remove("visible");
+            }
+          });
+        }, observerOptions);
+    
+        document.querySelectorAll("[data-observe]").forEach((section) => {
+          observer.observe(section);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="main">
+      <div class="title">
+        <h1 class="hi">Hi, I'm</h1>
+        <h1 class="Marvin_Cayosa">Marvin<br>Cayosa</h1>
+        <hi class="about_me">Learn more about me.</hi>
+        
+      </div>
+    </div>
+
+    
+    <div id="page_2" data-observe>
+      <img id="me" src="me.png" alt="me" />
+      <h1 class="about">ABOUT</h1>
+      <h1 class="me">ME.</h1>
+
+      <div class="bionote">
+        <p class="bionote_content">
+          Marvin Cayosa is a <strong>3rd-year</strong> student pursuing a <strong>Bachelor of Science in Computer Engineering</strong> at the <strong>University of the East Manila Campus</strong>. As the <strong>Vice President in Creatives and Communication</strong> at the <strong>Society of Computer Engineering Students (SCPES)</strong>, Marvin is instrumental in shaping the organization’s creative direction and communication strategies, helping to bring innovative ideas to life. <br> <br>
+
+          Outside his academic life, Marvin channels his passion for music as a skilled guitarist, serving as a guitar sessionist for <strong>Shane G</strong>. His active role in SCPES and his dedication to music, highlight his ability to balance both his studies and personal interests, showcasing his commitment to making a positive impact in both areas.</p>
+          
+      </div>
+
+      <div class="content_box">
+        <h1 class="contact_text">Contact Me!</h1>
+
+        <ul class="contact_list">
+          <li>
+            <a class="facebook" href="https://web.facebook.com/marbeyn.11">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="42px"
+                height="42px"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M48,7H16c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h17V38h-6v-7h6v-5c0-7,4-11,10-11c3.133,0,5,1,5,1v6h-4 c-2.86,0-4,2.093-4,4v5h7l-1,7h-6v17h8c4.418,0,8-3.582,8-8V15C56,10.582,52.418,7,48,7z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a class="instagram" href="https://www.instagram.com/marvin_cayosa/"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="42px"
+                height="42px"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a class="tiktok" href="https://www.tiktok.com/@marvin_cayosa.asp"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="42px"
+                height="42x"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a class="gmail" href="mailto:cayosa.marvin@ue.edu.ph"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="42px"
+                height="42px"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M 4 5 C 2.9069372 5 2 5.9069372 2 7 L 2 23 C 2 24.093063 2.9069372 25 4 25 L 26 25 C 27.093063 25 28 24.093063 28 23 L 28 7 C 28 5.9069372 27.093063 5 26 5 L 4 5 z M 6.6992188 7 L 23.300781 7 L 15 13.134766 L 6.6992188 7 z M 5 9.4746094 L 15 16.865234 L 25 9.4746094 L 25 23 L 5 23 L 5 9.4746094 z"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="ellipse"></div>
+    </div>
+    <div class="rectangle"></div>
+  </div>
+  </body>
+
+  
+
+    
+</html>

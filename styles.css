@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes shadow-pop-br {
+  0% {
+    -webkit-text-shadow: 0 0 #0e1321, 0 0 #0e1321, 0 0 #0e1321, 0 0 #0e1321,
+      0 0 #0e1321, 0 0 #0e1321, 0 0 #0e1321, 0 0 #0e1321;
+    text-shadow: 0 0 #0e1321, 0 0 #0e1321, 0 0 #0e1321, 0 0 #0e1321, 0 0 #0e1321,
+      0 0 #0e1321, 0 0 #0e1321, 0 0 #0e1321;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-text-shadow: 1px 1px #0e1321, 2px 2px #0e1321, 3px 3px #0e1321,
+      4px 4px #0e1321, 5px 5px #0e1321, 6px 6px #0e1321, 7px 7px #0e1321,
+      8px 8px #0e1321, 9px 9px #0e1321, 10px 10px #0e1321;
+    text-shadow: 1px 1px #0e1321, 2px 2px #0e1321, 3px 3px #0e1321,
+      4px 4px #0e1321, 5px 5px #0e1321, 6px 6px #0e1321, 7px 7px #0e1321,
+      8px 8px #0e1321, 9px 9px #0e1321, 10px 10px #0e1321;
+    -webkit-transform: translateX(-10px) translateY(-10px);
+    transform: translateX(-10px) translateY(-10px);
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: rgb(216, 197, 181);
+  }
+
+  10% {
+    color: rgb(255, 187, 0);
+  }
+}
+
+body {
+  background-color: #172635;
+}
+
+.container {
+  height: 200vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  width: 100%;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 950px;
+  height: 100%;
+  position: relative;
+  z-index: 7;
+  animation: fade-in-top 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.hi {
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #d8c5b5;
+  line-height: 1.242;
+  align-self: self-start;
+  margin-left: 55px;
+  margin-bottom: 5px;
+  z-index: 7;
+}
+
+.Marvin_Cayosa {
+  font-size: 250px;
+  font-family: "Poppins";
+  color: rgb(216, 197, 181);
+  font-weight: bold;
+  line-height: 0.745;
+  letter-spacing: -6px;
+  z-index: 6;
+  text-shadow: #0e1321 2px 15px;
+}
+
+.about_me {
+  font-size: 25px;
+  font-family: "Poppins";
+  color: #d8c5b5;
+  font-weight: 400;
+  font-style: italic;
+  z-index: 8;
+  margin-top: 10px;
+  align-self: flex-end;
+  -webkit-animation: color-change 2s infinite alternate;
+}
+
+.rectangle {
+  background: linear-gradient(180deg, #172635, #182738, #41657c);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+  box-shadow: 0px 27px 243px 0px rgba(0, 0, 0, 0.57);
+  position: absolute;
+  left: 300px;
+  top: -380px;
+  width: 80%;
+  height: 2000px;
+  z-index: 4;
+  rotate: -30deg;
+  overflow: hidden;
+  transition: scale 0.3s ease-out;
+}
+
+.rectangle:hover {
+  scale: 1.1;
+}
+
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content_box {
+  background-color: #ffb62a;
+  position: absolute;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  left: 0px;
+  top: 380px;
+  width: 35px;
+  height: 220px;
+  z-index: 12;
+  transition: width 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.content_box:hover {
+  width: 80px;
+}
+
+.contact_list {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s ease-out;
+}
+
+.content_box:hover .contact_text {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.content_box:hover .contact_list {
+  opacity: 1;
+  display: block;
+  transition: opacity 0.3s ease-out;
+}
+
+.about,
+.me {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.visible .about,
+.visible .me {
+  opacity: 1;
+  transform: translateY(0);
+  animation: shadow-pop-br 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.bionote_content {
+  text-align: justify;
+  text-indent: 100px;
+  font-family: "NT Marley", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(216, 197, 181);
+  animation: slideUpFadeIn 2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.facebook:hover svg {
+  transition: fill 0.3s ease-out;
+  fill: #1184ff;
+}
+
+.instagram:hover svg {
+  transition: fill 0.3s ease-out;
+  fill: #dd2a7d;
+}
+
+.gmail:hover svg {
+  transition: fill 0.3s ease-out;
+  fill: #ff0505;
+}
+
+.tiktok:hover svg {
+  transition: fill 0.3s ease-out;
+  fill: #464445;
+}
+
+/* Inline styles converted to CSS */
+
+.first_name {
+  font-family: "Futura", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 160px;
+  color: #ffb62a;
+  position: absolute;
+  left: 350px;
+  top: 100px;
+  margin: 0;
+  z-index: 4;
+}
+
+.last_name {
+  font-family: "Futura", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 160px;
+  color: #ffb62a;
+  position: absolute;
+  left: 350px;
+  top: 250px;
+  margin: 0;
+  z-index: 4;
+}
+
+#page_2 {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  z-index: 10;
+}
+
+#me {
+  max-width: 91%;
+  max-height: 91%;
+  z-index: 5;
+  top: 80px;
+  right: 20px;
+  position: absolute;
+}
+
+.about {
+  font-family: "NT Marley", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 135px;
+  color: rgb(216, 197, 181);
+  position: absolute;
+  top: 80px;
+  left: 430px;
+  margin: 0;
+  z-index: 4;
+}
+
+.me {
+  font-family: "NT Marley", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  color: rgb(216, 197, 181);
+  position: absolute;
+  top: 210px;
+  left: 750px;
+  margin: 0;
+  z-index: 4;
+}
+
+.bionote {
+  background-color: transparent;
+  position: absolute;
+  left: 110px;
+  top: 360px;
+  width: 800px;
+  height: 365px;
+  z-index: 18;
+}
+
+.contact_text {
+  font-family: "NT Marley", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  align-self: flex-end;
+  color: #202136;
+  margin: 0;
+  padding-left: 9px;
+}
+
+.contact_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  bottom: 11px;
+  position: absolute;
+}
+
+.ellipse {
+  border-radius: 50%;
+  background-color: #e9a72b;
+
+  position: absolute;
+  overflow-x: visible;
+  left: 970px;
+  width: 1000px;
+  height: 1000px;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  animation: slideIn 1.5s ease-out;
+  animation-fill-mode: both; /* Ensures animation stays at the end state */
+}
